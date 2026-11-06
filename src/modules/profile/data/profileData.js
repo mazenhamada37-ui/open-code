@@ -54,6 +54,30 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://school-system-one-inky.vercel.app',
   },
+  {
+    id: 'eng-portfolio',
+    name: 'ENG Portfolio',
+    tag: 'HTML · CSS',
+    desc: 'A dedicated engineering portfolio — open the live site to explore the full experience.',
+    tech: ['HTML', 'CSS'],
+    live: 'https://eng-8fek1dyy7-mazen-hamada-s-projects.vercel.app/#vision',
+  },
+  {
+    id: 'learning-platform',
+    name: 'Learning Platform',
+    tag: 'React · TypeScript',
+    desc: 'A full learning platform built with React, TypeScript and Tailwind — Firebase-backed with a Vite build.',
+    tech: ['React', 'TypeScript', 'Tailwind', 'Firebase'],
+    live: 'https://learning-plarform-f5mgdn2gn-mazen-hamada-s-projects.vercel.app/',
+  },
+  {
+    id: 'service-lab',
+    name: 'Service Lab',
+    tag: 'HTML · CSS',
+    desc: 'An Arabic RTL landing page for a laptop repair center — services, pricing packages, testimonials and a WhatsApp booking form.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    live: 'https://laptop-nine-flax.vercel.app/',
+  },
 ];
 
 export const education = {

@@ -88,10 +88,15 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  margin-left: auto;
   font-size: 14px;
   font-weight: 600;
   color: var(--accent-2);
   transition: gap 0.25s ease, opacity 0.25s ease;
+}
+
+.tech:empty {
+  display: none;
 }
 
 .cardLink:hover .visit {
