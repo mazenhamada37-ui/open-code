@@ -55,12 +55,12 @@ export const projects = [
     live: 'https://school-system-one-inky.vercel.app',
   },
   {
-    id: 'eng-portfolio',
+    id: 'al-daqqa-engineering',
     name: 'ENG Portfolio',
     tag: 'HTML · CSS',
-    desc: 'A dedicated engineering portfolio — open the live site to explore the full experience.',
+    desc: 'An engineering portfolio with vision, services, projects and contact sections — built with hand-written HTML and CSS.',
     tech: ['HTML', 'CSS'],
-    live: 'https://eng-8fek1dyy7-mazen-hamada-s-projects.vercel.app/#vision',
+    live: 'https://eng-one-eta.vercel.app/',
   },
   {
     id: 'learning-platform',
