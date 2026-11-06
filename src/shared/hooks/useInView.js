@@ -1,0 +1,31 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+
+/**
+ * useInView — returns [ref, inView]; fires once when the element scrolls into view.
+ */
+export default function useInView(threshold = 0.25) {
+  const ref = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.disconnect();
+        }
+      },
+      { threshold }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return [ref, inView];
+}

@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 26px;
+}
+
+.badge {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.field {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.school {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin: 4px 0 10px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+.degree {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .degree {
+    display: none;
+  }
+}

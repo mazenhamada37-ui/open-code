@@ -1,0 +1,9 @@
+.card {
+  padding: 28px;
+}
+
+.bio {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-dim);
+}
